@@ -29,8 +29,9 @@ def main():
     generation_config.num_return_sequences = config.num_return_sequences
     generation_config.pad_token_id = tokenizer.eos_token_id
     generation_config.eos_token_id = tokenizer.eos_token_id
-
-    data = load_dataset(config.dataset)
+    dataset = config.dataset
+    
+    data = load_dataset(dataset)
     data = data['train'].shard(num_shards=50, index=0).filter(lambda sample: sample['response'] != '' and sample['prompt'] != '').shuffle().map(generate_and_tokenize_prompt)
 
     trainer, model = train(model, tokenizer, data)
