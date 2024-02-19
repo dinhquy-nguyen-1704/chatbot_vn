@@ -7,9 +7,7 @@ from train import train
 
 import torch
 import torch.nn as nn
-import transformers
 
-from pprint import pprint
 from datasets import load_dataset
 
 def main():
@@ -29,7 +27,7 @@ def main():
     dataset = config.dataset
 
     data = load_dataset(dataset)
-    data = data['train'].shard(num_shards=50, index=0).filter(lambda sample: sample['response'] != '' and sample['prompt'] != '').shuffle().map(generate_and_tokenize_prompt)
+    data = data['train'].shard(num_shards=50, index=0).filter(lambda sample: sample['response'] != '' and sample['prompt'] != '').shuffle().map(lambda sample: generate_and_tokenize_prompt(sample, tokenizer))
 
     trainer, model = train(model, tokenizer, data)
     trainer.train()
