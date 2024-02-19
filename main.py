@@ -11,11 +11,8 @@ import transformers
 
 from pprint import pprint
 from datasets import load_dataset
-from huggingface_hub import notebook_login
 
 def main():
-
-    notebook_login()
 
     config = get_config()
 
@@ -30,7 +27,7 @@ def main():
     generation_config.pad_token_id = tokenizer.eos_token_id
     generation_config.eos_token_id = tokenizer.eos_token_id
     dataset = config.dataset
-    
+
     data = load_dataset(dataset)
     data = data['train'].shard(num_shards=50, index=0).filter(lambda sample: sample['response'] != '' and sample['prompt'] != '').shuffle().map(generate_and_tokenize_prompt)
 
