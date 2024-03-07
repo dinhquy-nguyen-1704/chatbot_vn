@@ -26,3 +26,7 @@ python -c "from huggingface_hub.hf_api import HfFolder; HfFolder.save_token('you
 If you have any questions or feedback, please open an issue in this repository.
 
 Happy coding!
+
+## References
+- AIO2023
+- [HuggingFace](https://huggingface.co/)
