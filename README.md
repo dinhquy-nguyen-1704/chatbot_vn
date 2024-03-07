@@ -28,5 +28,6 @@ If you have any questions or feedback, please open an issue in this repository.
 ## References
 - AIO2023
 - [HuggingFace](https://huggingface.co/)
+- [VinaLLaMA](https://www.vilm.org/research/introducing-vinallama)
 
 Happy coding!
