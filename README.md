@@ -1,6 +1,6 @@
 # chatbot_vn
 ## Introduction
-This repository is designed to help you get started with building and fine-tuning your own AI chatbot in Vietnamese.
+This repository is designed to help you get started with building and fine-tuning your own AI chatbot in Vietnamese. The default model used in this repository is [vinallama-7b-chat](https://huggingface.co/vilm/vinallama-7b-chat) and the default dataset is [chatbot_instruction_prompts]([url](https://huggingface.co/datasets/alespalla/chatbot_instruction_prompts)).
 
 ## Getting Started
 ```
