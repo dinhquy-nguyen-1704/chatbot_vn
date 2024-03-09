@@ -28,22 +28,17 @@ To train the model, run the following command:
 ```
 python main.py
 ```
-You can also adjust the following parameters for the training process: 
+> You can also adjust the following parameters for the training process: 
 
-
+```
 --model: name of the trained model file
-
 --dataset: dataset used for fine-tuning
-
 --output_dir: name of the model on Hugging Face after training
-
 --max_new_tokens: Maximum number of new tokens that can be generated in the output
-
 --temperature: Controls the randomness of the output’s predictions
-
 --top_p: Known as nucleus sampling, this parameter decides the number of words to consider for each prediction
-
 --num_return_sequences: Specifies the number of sequences to generate
+```
 
 ## Contact
 If you have any questions or feedback, please open an issue in this repository.
