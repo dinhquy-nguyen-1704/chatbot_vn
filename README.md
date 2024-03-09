@@ -22,6 +22,13 @@ Log in to Hugging Face and create a New Token with **write** mode.
 ```
 python -c "from huggingface_hub.hf_api import HfFolder; HfFolder.save_token('your_token')"
 ```
+
+## Training
+To train the model, run the following command:
+```
+python main.py
+```
+
 ## Contact
 If you have any questions or feedback, please open an issue in this repository.
 
