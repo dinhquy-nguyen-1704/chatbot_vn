@@ -39,7 +39,7 @@ python main.py
 --num_return_sequences: specifies the number of sequences to generate
 ```
 
-##Inference
+## Inference
 To use the trained model, run the following command:
 ```
 python infer.py --model model_name --text your_text
