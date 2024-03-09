@@ -28,6 +28,9 @@ To train the model, run the following command:
 ```
 python main.py
 ```
+--model: name of the trained model file
+--dataset: dataset used for fine-tuning
+--output_dir: name of the model on Hugging Face after training
 
 ## Contact
 If you have any questions or feedback, please open an issue in this repository.
