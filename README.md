@@ -18,12 +18,12 @@ cd /kaggle/working/chatbot_vn
 ```
 pip install -r requirements.txt
 ```
-Log in to Hugging Face and create a New Token with **write** mode.
+
+## 3. Training
+First, log in to Hugging Face and create a New Token with **write** mode.
 ```
 python -c "from huggingface_hub.hf_api import HfFolder; HfFolder.save_token('your_token')"
 ```
-
-## 3. Training
 To train the model, run the following command:
 ```
 python main.py
