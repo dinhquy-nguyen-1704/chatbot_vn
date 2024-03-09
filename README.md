@@ -51,7 +51,8 @@ your_text: your question for model
 ```
 
 ## 5. Contact
-If you have any questions or feedback, please open an issue in this repository or send an email to nguyendinhquythptcla@gmail.com.
+If you have any questions or feedback, please open an issue in this repository <br/>
+or send an email to nguyendinhquythptcla@gmail.com.
 
 ## 6. References
 - AIO2023
