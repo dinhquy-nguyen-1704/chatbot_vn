@@ -42,7 +42,7 @@ python main.py
 ## Inference
 To use the trained model, run the following command:
 ```
-python infer.py --model model_name --text your_text
+python infer.py --model_hf_name model_name --text your_text
 ```
 > Where:
 ```
