@@ -29,7 +29,6 @@ To train the model, run the following command:
 python main.py
 ```
 > You can also adjust the following parameters for the training process: 
-
 ```
 --model: name of the trained model file
 --dataset: dataset used for fine-tuning
