@@ -35,7 +35,7 @@ python main.py
 --output_dir: name of the model on Hugging Face after training
 --max_new_tokens: maximum number of new tokens that can be generated in the output
 --temperature: controls the randomness of the output’s predictions
---top_p: Known as nucleus sampling, this parameter decides the number of words to consider for each prediction
+--top_p: known as nucleus sampling, this parameter decides the number of words to consider for each prediction
 --num_return_sequences: specifies the number of sequences to generate
 ```
 
