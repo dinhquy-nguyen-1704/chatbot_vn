@@ -32,11 +32,22 @@ python main.py
 ```
 --model: name of the trained model file
 --dataset: dataset used for fine-tuning
---output_dir: name of the model on Hugging Face after training
+--output_dir: name of the model on HuggingFace after training
 --max_new_tokens: maximum number of new tokens that can be generated in the output
 --temperature: controls the randomness of the output’s predictions
 --top_p: known as nucleus sampling, this parameter decides the number of words to consider for each prediction
 --num_return_sequences: specifies the number of sequences to generate
+```
+
+##Inference
+To use the trained model, run the following command:
+```
+python infer.py --model model_name --text your_text
+```
+> Where:
+```
+model_name: name of the trained model on HuggingFace
+your_text: your question for model
 ```
 
 ## Contact
