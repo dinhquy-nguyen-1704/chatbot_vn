@@ -13,7 +13,7 @@ This repository is designed to help you get started with building and fine-tunin
 git clone https://github.com/dinhquy-nguyen-1704/chatbot_vn.git
 ```
 ```
-cd /kaggle/working/chatbot_vn
+cd chatbot_vn
 ```
 ```
 pip install -r requirements.txt
